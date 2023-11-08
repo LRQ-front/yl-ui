@@ -1,7 +1,10 @@
-'use strict';
+<template>
+  <button>按钮</button>
+</template>
 
-module.exports = button;
-
-function button() {
-  return 'Hello from button';
-}
+<script lang="ts">
+import { defineComponent } from "vue";
+export default defineComponent({
+  name: "yl-button",
+});
+</script>
