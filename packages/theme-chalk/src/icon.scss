@@ -1,0 +1,31 @@
+@import "common/var.scss";
+@font-face {
+  font-family: "yl-ui"; /* Project id 4322489 */
+  src: url("./fonts/iconfont.woff2") format("woff2"),
+    url("./fonts/iconfont.woff") format("woff"),
+    url("./fonts/iconfont.ttf") format("truetype");
+}
+
+[class^="#{$namespace}-icon-"] {
+  font-family: "yl-ui" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.yl-icon-sousuo:before {
+  content: "\e600";
+}
+
+.yl-icon-home:before {
+  content: "\e601";
+}
+
+.yl-icon-jiazai:before {
+  content: "\e699";
+}
+
+.yl-icon-jiazai1:before {
+  content: "\e629";
+}

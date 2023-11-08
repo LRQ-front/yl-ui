@@ -9,7 +9,8 @@
     "vue": "^3.2.36"
   },
   "scripts": {
-    "dev": "webpack serve --config ./play/webpack.config.js"
+    "dev": "webpack serve --config ./play/webpack.config.js",
+    "build:css": "gulp -f packages/theme-chalk/gulpfile.js"
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",
