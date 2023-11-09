@@ -6,21 +6,7 @@ module.exports = {
   overrides: [
     {
       test: /\.vue$/,
-      plugins: [
-        // ?
-        "@babel/transform-typescript",
-      ],
+      plugins: ["@babel/transform-typescript"],
     },
   ],
-  env: {
-    utils: {
-      plugins: [
-        // ?
-        [
-          "babel-plugin-module-resolver", // 为了能正确找到z-ui模块
-          { root: "yl-ui" },
-        ],
-      ],
-    },
-  },
 };
