@@ -7,6 +7,11 @@
     @content;
   }
 }
+@mixin button-variant($color, $background-color, $border-color) {
+  color: $color;
+  background: $background-color;
+  border-color: $border-color;
+}
 // .yl-button.is-xxx
 @mixin when($state) {
   @at-root {

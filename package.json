@@ -5,12 +5,13 @@
     "packages/*"
   ],
   "dependencies": {
+    "gulp": "^4.0.2",
     "typescript": "^5.2.2",
     "vue": "^3.2.36"
   },
   "scripts": {
     "dev": "webpack serve --config ./play/webpack.config.js",
-    "build:css": "gulp -f packages/theme-chalk/gulpfile.js"
+    "build:css": "rm -rf ./dist&gulp -f packages/theme-chalk/gulpfile.js buildCss"
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",
@@ -23,6 +24,8 @@
     "css-loader": "^6.8.1",
     "cz-conventional-changelog": "^3.3.0",
     "file-loader": "^6.2.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
     "html-webpack-plugin": "^5.5.3",
     "lerna": "^7.4.2",
     "sass": "^1.69.5",
