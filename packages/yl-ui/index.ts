@@ -13,4 +13,5 @@ const install = (app: App): void => {
 };
 export default {
   install, // 导出install方法
+  ...components, //用于按需导入
 };
