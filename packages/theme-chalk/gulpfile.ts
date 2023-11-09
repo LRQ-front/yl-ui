@@ -1,24 +1,24 @@
 const path = require("path");
 const gulp = require("gulp");
+const { series } = require("gulp");
 const cleanCss = require("gulp-clean-css");
 const sass = require("gulp-sass")(require("sass"));
 
-gulp.task("buildCss", () => {
+function buildCss() {
   return gulp
     .src(path.resolve(__dirname, "./src/*.scss"))
     .pipe(sass())
     .pipe(cleanCss())
     .pipe(gulp.dest(path.resolve(__dirname, "../../dist/css")));
-});
+}
 
-// function buildCss(params) {
-//   return gulp
-//     .src(path.resolve(__dirname, "./src/*.scss"))
-//     .pipe(sass())
-//     .pipe(cleanCss())
-//     .pipe(gulp.dest(path.resolve(__dirname, "../../dist/css")));
-// }
+function copyFont() {
+  return (
+    gulp
+      .src(path.resolve(__dirname, "./src/fonts/**"))
+      // .pipe(cleanCss())
+      .pipe(gulp.dest(path.resolve(__dirname, "../../dist/css/fonts")))
+  );
+}
 
-// module.exports = {
-//   buildCss,
-// };
+exports.default = series(buildCss, copyFont);

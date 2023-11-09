@@ -1,8 +1,22 @@
 {
-  "name": "r-ui",
+  "name": "yl-ui-lib",
   "private": true,
+  "version": "0.2.0",
+  "description": "ui组件库",
+  "main": "dist/yl-ui.umd.js",
+  "license": "MIT",
   "workspaces": [
     "packages/*"
+  ],
+  "keywords": [
+    "yl-ui",
+    "ui",
+    "vue"
+  ],
+  "author": "rq",
+  "files": [
+    "dist",
+    "packages"
   ],
   "dependencies": {
     "gulp": "^4.0.2",
@@ -11,7 +25,7 @@
   },
   "scripts": {
     "dev": "webpack serve --config ./play/webpack.config.js",
-    "build:css": "rm -rf ./dist&gulp -f packages/theme-chalk/gulpfile.js buildCss",
+    "build:css": "rm -rf ./dist&gulp -f packages/theme-chalk/gulpfile.ts",
     "build": "webpack --config ./build/webpack.config.js"
   },
   "devDependencies": {
@@ -33,6 +47,7 @@
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
+    "ts-node": "^10.9.1",
     "url-loader": "^4.1.1",
     "vue-loader": "^17.3.1",
     "webpack": "^5.89.0",

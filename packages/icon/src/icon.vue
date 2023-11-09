@@ -1,5 +1,5 @@
 <template>
-  <div class="yl-icon-sousuo">icon</div>
+  <div class="yl-icon-home">icon</div>
 </template>
 
 <script lang="ts">

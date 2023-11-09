@@ -11,7 +11,7 @@ async function makeList(dirPath, list) {
     const component = file.split("/")[1];
     list[component] = `./${file}`;
   }
-  console.log(list);
+  //   console.log(list);
 }
 
 makeList("packages", list);
