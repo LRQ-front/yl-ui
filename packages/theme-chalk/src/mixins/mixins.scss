@@ -12,6 +12,23 @@
   background: $background-color;
   border-color: $border-color;
 }
+@mixin button-hover($bg-color) {
+  &:hover {
+    background-color: $bg-color;
+  }
+}
+@mixin button-focus($bg-color) {
+  &:active {
+    background-color: $bg-color;
+  }
+}
+
+@mixin button-size($height, $padding-l-r, $button-font-size) {
+  min-height: $height;
+  padding-left: $padding-l-r;
+  padding-right: $padding-l-r;
+  font-size: $button-font-size;
+}
 // .yl-button.is-xxx
 @mixin when($state) {
   @at-root {
@@ -20,8 +37,17 @@
     }
   }
 }
+
 // &--primary => .yl-button--primary
 @mixin m($modifier) {
+  @at-root {
+    #{& + $modifier-separator + $modifier} {
+      @content;
+    }
+  }
+}
+//.yl-button--large
+@mixin s($modifier) {
   @at-root {
     #{& + $modifier-separator + $modifier} {
       @content;

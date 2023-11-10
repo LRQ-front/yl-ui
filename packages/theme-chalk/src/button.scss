@@ -5,17 +5,42 @@
   display: inline-block;
   cursor: pointer;
   outline: none;
-  border: #fafafa;
+  border: 1px solid #ddd;
   border-radius: 5px;
   user-select: none;
+  padding-left: 13px;
+  padding-right: 13px;
   min-height: 40px;
   line-height: 1;
+  font-size: 16px;
+  // margin: 10px 10px;
   vertical-align: middle;
+  background-color: #fff;
+  color: $--color-black;
   & [class*="#{$namespace}-icon-"] {
     // 处理icon 和文字间距
     & + span {
       margin-left: 5px;
     }
+  }
+
+  &.is-disabled.#{$namespace}-button--warning {
+    background-color: $--bg-color-warning-disabled;
+  }
+  &.is-disabled.#{$namespace}-button--primary {
+    background-color: $--bg-color-primary-disabled;
+  }
+  &.is-disabled.#{$namespace}-button--info {
+    background-color: $--bg-color-warning-disabled;
+  }
+  &.is-disabled.#{$namespace}-button--danger {
+    background-color: $--bg-color-danger-disabled;
+  }
+  &.is-disabled.#{$namespace}-button--success {
+    background-color: $--bg-color-success-disabled;
+  }
+  &.is-disabled.#{$namespace}-button--default {
+    background-color: white;
   }
   @include when(disabled) {
     // 针对不同类型处理
@@ -26,12 +51,48 @@
     }
   }
   @include when(round) {
-    border-radius: 20px;
-    padding: 12px 23px;
+    border-radius: 50%;
+    // padding: 12px 23px;
   }
   @include when(loading) {
     pointer-events: none;
   }
+
+  @include m(primary) {
+    @include button-hover($--hover-color-primary);
+  }
+  @include m(default) {
+    @include button-hover($--hover-color-default);
+  }
+  @include m(success) {
+    @include button-hover($--hover-color-success);
+  }
+  @include m(info) {
+    @include button-hover($--hover-color-info);
+  }
+  @include m(danger) {
+    @include button-hover($--hover-color-danger);
+  }
+  @include m(warning) {
+    @include button-hover($--hover-color-warning);
+  }
+
+  @include m(primary) {
+    @include button-focus($--active-color-primary);
+  }
+  @include m(success) {
+    @include button-focus($--active-color-success);
+  }
+  @include m(info) {
+    @include button-focus($--active-color-info);
+  }
+  @include m(danger) {
+    @include button-focus($--active-color-danger);
+  }
+  @include m(warning) {
+    @include button-focus($--active-color-warning);
+  }
+
   @include m(primary) {
     //渲染不同类型的button
     @include button-variant($--color-white, $--color-primary, $--color-primary);
@@ -47,5 +108,18 @@
   }
   @include m(info) {
     @include button-variant($--color-white, $--color-info, $--color-info);
+  }
+
+  @include s(large) {
+    @include button-size($--height-large, $--padding-large, $--font-large);
+  }
+  @include s(medium) {
+    @include button-size($--height-medium, $--padding-medium, $--font-medium);
+  }
+  @include s(small) {
+    @include button-size($--height-small, $--padding-small, $--font-small);
+  }
+  @include s(mini) {
+    @include button-size($--height-mini, $--padding-mini, $--font-mini);
   }
 }
