@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   { text: "", link: "/" },
   { text: "指南", link: "/guide/install", activeMatch: "^/guide/" },
   {

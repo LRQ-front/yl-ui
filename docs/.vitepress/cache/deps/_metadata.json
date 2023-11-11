@@ -1,19 +1,32 @@
 {
-  "hash": "aaa21277",
-  "browserHash": "3b2ee70b",
+  "hash": "b6646752",
+  "browserHash": "0661a48d",
   "optimized": {
     "vue": {
-      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "a44f7eb0",
+      "fileHash": "d3991283",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
-      "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
+      "src": "../../../node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "836c8a4d",
+      "fileHash": "fbd541d4",
       "needsInterop": false
+    },
+    "yl-ui-lib": {
+      "src": "../../../node_modules/yl-ui-lib/dist/yl-ui.umd.js",
+      "file": "yl-ui-lib.js",
+      "fileHash": "407a7ee6",
+      "needsInterop": true
     }
   },
-  "chunks": {}
+  "chunks": {
+    "chunk-NLG5GKHW": {
+      "file": "chunk-NLG5GKHW.js"
+    },
+    "chunk-CF3WPAMV": {
+      "file": "chunk-CF3WPAMV.js"
+    }
+  }
 }

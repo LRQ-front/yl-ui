@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   "/guide": getGuideSidebar(),
   "/components": getComponentSidebar(),
 };

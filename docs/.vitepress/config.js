@@ -1,10 +1,14 @@
 //必要的配置文件
-import demoblock from "vitepress-demoblock";
-const nav = require("./configs/nav");
+import {
+  demoblockPlugin,
+  demoblockVitePlugin,
+} from "vitepress-theme-demoblock";
+import { defineConfig } from "vitepress";
 
-const sidebar = require("./configs/sidebar");
+import nav from "./configs/nav";
+import sidebar from "./configs/sidebar";
 
-module.exports = {
+export default defineConfig({
   title: "YL UI组件库",
   description: "ui组件库",
   head: [["link", { rel: "icon", href: "/logo.png" }]],
@@ -13,8 +17,11 @@ module.exports = {
   },
   markdown: {
     config: (md) => {
-      md.use(demoblock);
+      md.use(demoblockPlugin);
     },
+  },
+  vite: {
+    plugins: [demoblockVitePlugin()],
   },
   themeConfig: {
     logo: "/logo.png",
@@ -29,4 +36,4 @@ module.exports = {
       copyright: "Copyright © 2023-present ZYL",
     },
   },
-};
+});
