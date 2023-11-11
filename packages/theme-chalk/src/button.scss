@@ -41,6 +41,7 @@
   }
   &.is-disabled.#{$namespace}-button--default {
     background-color: white;
+    color: $--text-color-disabled;
   }
   @include when(disabled) {
     // 针对不同类型处理

@@ -6,6 +6,7 @@
     //yl-button-group > yl-button
     & {
       border-radius: 0;
+      border-right: 1px solid white;
     }
 
     &:first-child {
@@ -15,6 +16,7 @@
     &:last-child {
       border-top-right-radius: $--border-radius-base;
       border-bottom-right-radius: $--border-radius-base;
+      border-right: none;
     }
   }
 }
