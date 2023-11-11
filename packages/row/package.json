@@ -1,0 +1,29 @@
+{
+  "name": "@yl-ui/row",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "LRQ <1365962892@qq.com>",
+  "homepage": "https://github.com/jsdlajkhf/yl-ui#readme",
+  "license": "ISC",
+  "main": "lib/row.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsdlajkhf/yl-ui.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/row.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/jsdlajkhf/yl-ui/issues"
+  }
+}
