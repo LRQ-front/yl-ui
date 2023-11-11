@@ -1,0 +1,10 @@
+{
+  "name": "@yl-ui/docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "vitepress-demoblock": "^1.0.4",
+    "yl-ui-lib": "^1.1.0"
+  }
+}

@@ -9,5 +9,5 @@
   <!-- <yl-icon name="search" color="red" :size="30"></yl-icon> -->
   <yl-button loading round type="danger" size="large"></yl-button>
 
-  <yl-icon name="location" color="red" size="20px"></yl-icon>
+  <yl-icon name="location" color="red" :size="40"></yl-icon>
 </template>

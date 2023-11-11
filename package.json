@@ -1,12 +1,12 @@
 {
   "name": "yl-ui-lib",
-  "private": true,
-  "version": "0.2.0",
+  "version": "1.1.0",
   "description": "ui组件库",
   "main": "dist/yl-ui.umd.js",
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "play"
   ],
   "keywords": [
     "yl-ui",
@@ -26,7 +26,9 @@
   "scripts": {
     "dev": "webpack serve --config ./play/webpack.config.js",
     "build:css": "rm -rf ./dist&gulp -f packages/theme-chalk/gulpfile.ts",
-    "build": "webpack --config ./build/webpack.config.js"
+    "build": "webpack --config ./build/webpack.config.js",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs"
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",
@@ -49,6 +51,7 @@
     "style-loader": "^3.3.3",
     "ts-node": "^10.9.1",
     "url-loader": "^4.1.1",
+    "vitepress": "^1.0.0-rc.25",
     "vue-loader": "^17.3.1",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",

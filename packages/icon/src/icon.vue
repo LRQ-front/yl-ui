@@ -21,7 +21,11 @@ export default defineComponent({
   },
   computed: {
     fontSize() {
-      return typeof this.size == "string" ? this.size : this.size + "px";
+      return typeof this.size == "string"
+        ? this.size.slice(-2) == "px"
+          ? this.size
+          : this.size + "px"
+        : this.size + "px";
     },
   },
 });
