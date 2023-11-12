@@ -90,31 +90,40 @@
 
 ### 调整尺寸
 
-通过 sze 属性给按钮调整尺寸，有 large，medium，small，mini 选项
+通过 sze 属性给按钮调整尺寸，有 large，medium，small，mini 选项,medium 是默认尺寸
 
 :::demo
 
 ```vue
 <template>
-  <yl-row>
+  <yl-row class="mb">
     <yl-button class="ml" size="large">Large</yl-button>
-    <yl-button class="ml" size="medium">Medium</yl-button>
+    <yl-button class="ml" size="medium">Default</yl-button>
     <yl-button class="ml" size="small">Small</yl-button>
     <yl-button class="ml" size="mini">Mini</yl-button>
   </yl-row>
 
-  <yl-row>
-    <yl-button size="large" round disabled></yl-button>
+  <yl-row class="mb">
+    <yl-button round class="ml" size="large">Large</yl-button>
+    <yl-button round class="ml" size="medium">Default</yl-button>
+    <yl-button round class="ml" size="small">Small</yl-button>
+    <yl-button round class="ml" size="mini">Mini</yl-button>
+  </yl-row>
 
-    <yl-button round type="success" size="medium"></yl-button>
-    <yl-button round type="info" size="small"></yl-button>
-    <yl-button type="warning" round size="mini"></yl-button>
+  <yl-row class="mb">
+    <yl-button icon="search" circle class="ml" size="large"></yl-button>
+    <yl-button icon="search" circle class="ml" size="medium"></yl-button>
+    <yl-button icon="search" circle class="ml" size="small"></yl-button>
+    <yl-button icon="search" circle class="ml" size="mini"></yl-button>
   </yl-row>
 </template>
 
 <style>
 .ml {
   margin-left: 10px;
+}
+.mb {
+  margin-bottom: 15px;
 }
 </style>
 ```

@@ -23,10 +23,11 @@
   }
 }
 
-@mixin button-size($height, $padding-l-r, $button-font-size) {
+@mixin button-size($height, $padding, $button-font-size) {
   height: $height;
-  padding-left: $padding-l-r;
-  padding-right: $padding-l-r;
+  // width: $height;
+  padding: $padding;
+  // padding-right: $padding-l-r;
   font-size: $button-font-size;
 }
 // .yl-button.is-xxx

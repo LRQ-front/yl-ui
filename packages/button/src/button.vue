@@ -28,7 +28,7 @@ export default defineComponent({
         ].includes(val);
       },
     },
-    size: String as PropType<"large" | "medium" | "small" | "mini">,
+    size: String as PropType<"large" | "medium" | "small">,
     icon: {
       type: String,
       default: "",

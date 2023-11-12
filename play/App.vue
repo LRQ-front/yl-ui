@@ -6,11 +6,11 @@
   <yl-button round type="success" size="medium"></yl-button>
   <yl-button round type="success"></yl-button>
   <yl-button round type="info" size="small"></yl-button>
-  <yl-button type="warning" round size="mini"></yl-button>
+  <yl-button icon="search">搜索</yl-button>
 
   <yl-button icon="search" round>搜索</yl-button>
   <!-- <yl-icon name="search" color="red" :size="30"></yl-icon> -->
-  <yl-button loading circle round type="danger" size="large">hello</yl-button>
+  <yl-button loading circle round type="danger" size="large"></yl-button>
 
   <yl-icon name="location" color="red" :size="40"></yl-icon>
 
@@ -28,11 +28,15 @@
       <yl-icon name="arrow-right-bold"></yl-icon>
     </yl-button>
   </yl-button-group>
+  <hr />
 
+  <h2>测试circle</h2>
+  <yl-button circle size="large" icon="search"> </yl-button>
+  <yl-button circle icon="search"></yl-button>
+  <yl-button circle icon="search" size="small">1111</yl-button>
   <hr />
 
   <h1>测试布局组件Row，Col</h1>
-
   <div style="border: 2px solid black">
     <yl-row :gutter="20">
       <yl-col :span="6"
@@ -84,6 +88,8 @@
       ><div style="background-color: gray; height: 20px"></div
     ></yl-col>
   </yl-row>
+
+  <hr />
 </template>
 
 <style>

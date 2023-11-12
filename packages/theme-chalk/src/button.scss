@@ -25,6 +25,10 @@
     }
   }
 
+  &.is-circle {
+    width: 42px;
+  }
+
   &.is-disabled.#{$namespace}-button--warning {
     background-color: $--bg-color-warning-disabled;
   }
@@ -117,14 +121,23 @@
 
   @include s(large) {
     @include button-size($--height-large, $--padding-large, $--font-large);
+    &.is-circle {
+      width: $--height-large;
+    }
   }
   @include s(medium) {
     @include button-size($--height-medium, $--padding-medium, $--font-medium);
+    &.is-circle {
+      width: $--height-medium;
+    }
   }
   @include s(small) {
     @include button-size($--height-small, $--padding-small, $--font-small);
+    &.is-circle {
+      width: $--height-small;
+    }
   }
-  @include s(mini) {
-    @include button-size($--height-mini, $--padding-mini, $--font-mini);
-  }
+  // @include s(mini) {
+  //   @include button-size($--height-mini, $--padding-mini, $--font-mini);
+  // }
 }
