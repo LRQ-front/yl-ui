@@ -26,18 +26,53 @@
 
   <h1>测试布局组件Row，Col</h1>
 
-  <yl-row :gutter="20">
-    <yl-col :span="8"><div :style="{ backgroundColor: 'red' }">1</div></yl-col>
-    <yl-col :span="8"
+  <div style="border: 2px solid black">
+    <yl-row :gutter="20">
+      <yl-col :span="6"
+        ><div :style="{ backgroundColor: 'red' }">1</div></yl-col
+      >
+      <yl-col :span="6"
+        ><div :style="{ backgroundColor: 'green' }">1</div></yl-col
+      >
+      <yl-col :span="6"
+        ><div :style="{ backgroundColor: 'red' }">1</div></yl-col
+      >
+      <yl-col :span="6"
+        ><div :style="{ backgroundColor: 'red' }">1</div></yl-col
+      >
+    </yl-row>
+  </div>
+  <yl-row justify="center">
+    <yl-col :span="6"><div :style="{ backgroundColor: 'red' }">1</div></yl-col>
+    <yl-col :span="6"
       ><div :style="{ backgroundColor: 'green' }">1</div></yl-col
     >
-    <yl-col :span="8"><div :style="{ backgroundColor: 'red' }">1</div></yl-col>
+    <yl-col :span="6"><div :style="{ backgroundColor: 'red' }">1</div></yl-col>
   </yl-row>
+
+  <h2>响应式布局</h2>
+
+  <div style="border: 2px solid black">
+    <yl-row>
+      <yl-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"
+        ><div :style="{ backgroundColor: 'red' }">1</div></yl-col
+      >
+      <yl-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"
+        ><div :style="{ backgroundColor: 'green' }">1</div></yl-col
+      >
+      <yl-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11"
+        ><div :style="{ backgroundColor: 'red' }">1</div></yl-col
+      >
+      <yl-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"
+        ><div :style="{ backgroundColor: 'pink' }">1</div></yl-col
+      >
+    </yl-row>
+  </div>
 </template>
 
 <style>
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 </style>

@@ -16,6 +16,21 @@ export default defineComponent({
       type: Number,
       default: 0,
     },
+    xs: {
+      type: Number,
+    },
+    sm: {
+      type: Number,
+    },
+    md: {
+      type: Number,
+    },
+    lg: {
+      type: Number,
+    },
+    xl: {
+      type: Number,
+    },
   },
   setup(props, { slots }) {
     //导入父组件的gutter
@@ -25,12 +40,21 @@ export default defineComponent({
     const classs = computed(() => {
       const res: string[] = [];
 
+      //1.处理span和offset
       ["span", "offset"].forEach((item) => {
         const size = props[item];
 
         //yl-col-span-3    yl-col-offset-6
         if (typeof size == "number" && size > 0) {
           res.push(`yl-col-${item}-${size}`);
+        }
+      });
+
+      //2.处理响应式
+      const sizes = ["xs", "sm", "md", "lg", "xl"] as const;
+      sizes.forEach((size) => {
+        if (typeof props[size] == "number") {
+          res.push(`yl-col-${size}-${props[size]}`);
         }
       });
 

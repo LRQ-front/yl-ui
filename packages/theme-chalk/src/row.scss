@@ -4,4 +4,18 @@
 @include b(row) {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
+
+  @include when(justify-end) {
+    justify-content: flex-end;
+  }
+  @include when(justify-space-between) {
+    justify-content: space-between;
+  }
+  @include when(justify-around) {
+    justify-content: space-around;
+  }
+  @include when(justify-center) {
+    justify-content: center;
+  }
 }

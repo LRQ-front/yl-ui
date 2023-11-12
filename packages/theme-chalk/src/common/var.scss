@@ -45,3 +45,32 @@ $--active-color-success: #529b2e;
 $--active-color-info: #73767a;
 $--active-color-danger: #c45656;
 $--active-color-warning: #b88230;
+
+//row的响应式布局
+$--sm: 768px !default;
+$--md: 992px !default;
+$--lg: 1200px !default;
+$--xl: 1920px !default;
+
+$--breakpoints: (
+  "xs": (
+    max-width: $--sm - 1,
+    //<768px
+  ),
+  "sm": (
+    min-width: $--sm,
+    //>=768px
+  ),
+  "md": (
+    min-width: $--md,
+    //>=992px;
+  ),
+  "lg": (
+    min-width: $--lg,
+    //>=1200px;
+  ),
+  "xl": (
+    min-width: $--xl,
+    //>=1920px
+  ),
+);
