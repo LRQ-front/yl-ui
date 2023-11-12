@@ -12,9 +12,6 @@ export default defineConfig({
   title: "YL UI组件库",
   description: "ui组件库",
   head: [["link", { rel: "icon", href: "/logo.png" }]],
-  outline: {
-    label: "CONTENTS",
-  },
   markdown: {
     config: (md) => {
       md.use(demoblockPlugin);
@@ -26,6 +23,10 @@ export default defineConfig({
   themeConfig: {
     logo: "/logo.png",
     nav,
+    outline: {
+      level: 3,
+      label: "CONTENTS",
+    },
     sidebar,
     docFooter: {
       prev: "上一页",

@@ -24,7 +24,7 @@
 }
 
 @mixin button-size($height, $padding-l-r, $button-font-size) {
-  min-height: $height;
+  height: $height;
   padding-left: $padding-l-r;
   padding-right: $padding-l-r;
   font-size: $button-font-size;

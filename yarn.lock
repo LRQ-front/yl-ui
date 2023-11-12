@@ -9831,10 +9831,10 @@ yargs@^7.1.0:
     y18n "^3.2.1"
     yargs-parser "^5.0.1"
 
-yl-ui-lib@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.npmjs.org/yl-ui-lib/-/yl-ui-lib-1.2.2.tgz"
-  integrity sha512-OCH3o90idKa88BSYaU24V9ZzYTSg7lObl+G+j6BEG+7dQyTK6QCQcU0bAGY1jidHoNIY0oET0QJWguqjaQUImA==
+yl-ui-lib@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.npmjs.org/yl-ui-lib/-/yl-ui-lib-1.2.3.tgz"
+  integrity sha512-7RMX8B72PWpykdF8cmj4yTS86CDkDAWMklNIzcjrB8KyKCYCAhvh0vQ9FZxAHDBn12gLJ4Ne49eZcWngTAZQKg==
   dependencies:
     gulp "^4.0.2"
     typescript "^5.2.2"

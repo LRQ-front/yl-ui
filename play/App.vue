@@ -1,10 +1,10 @@
 <template>
   <h1>Button和Icon测试</h1>
 
-  <yl-icon name="loading"></yl-icon>
+  <!-- size测试 -->
   <yl-button size="large" round disabled></yl-button>
-
   <yl-button round type="success" size="medium"></yl-button>
+  <yl-button round type="success"></yl-button>
   <yl-button round type="info" size="small"></yl-button>
   <yl-button type="warning" round size="mini"></yl-button>
 

@@ -23,7 +23,7 @@
     "gulp": "^4.0.2",
     "typescript": "^5.2.2",
     "vue": "^3.2.36",
-    "yl-ui-lib": "^1.2.2"
+    "yl-ui-lib": "^1.2.3"
   },
   "scripts": {
     "dev": "webpack serve --config ./play/webpack.config.js",
