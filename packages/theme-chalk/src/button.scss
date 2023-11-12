@@ -1,5 +1,5 @@
-@import "common/var.scss";
 @import "./mixins/mixins.scss";
+
 @include b(button) {
   // BEM规范
   display: inline-block;
@@ -52,8 +52,11 @@
     }
   }
   @include when(round) {
-    border-radius: 50%;
+    border-radius: $--border-radius-round;
     // padding: 12px 23px;
+  }
+  @include when(circle) {
+    border-radius: 50%;
   }
   @include when(loading) {
     pointer-events: none;

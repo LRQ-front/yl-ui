@@ -36,6 +36,7 @@ export default defineComponent({
     disabled: Boolean,
     round: Boolean,
     loading: Boolean,
+    circle: Boolean,
   },
   setup(props, ctx) {
     const classs = computed(() => [
@@ -46,6 +47,7 @@ export default defineComponent({
         "is-disabled": props.disabled, // 状态全部以 is-开头
         "is-loading": props.loading,
         "is-round": props.round,
+        "is-circle": props.circle,
       },
     ]);
     const handleClick = (e) => {

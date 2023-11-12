@@ -1,20 +1,20 @@
 import { createApp } from "vue";
 
-// import YUI from "yl-ui-lib2";
-import "theme-chalk/src/index.scss";
-// import "../dist/css/index.css";
-// import "yl-ui-lib2/dist/css/index.css";
+//测试npm包
+// import YUI from "yl-ui-lib";
+// import "yl-ui-lib/dist/css/index.css";
 
-//测试样式
-import YUI from "../packages/yl-ui";
+//开发测试
+// import YUI from "../dist/yl-ui.umd.js";
 // import "../dist/css/index.css";
 
 //测试单个组件导入
 // import Button from "../dist/button.umd.js";
 // import Icon from "../dist/icon.umd.js";
 
-//测试导入主入口
-// import YUI from "../dist/yl-ui.umd.js";
+//测试未打包的组件
+import YUI from "../packages/yl-ui/index";
+import "../packages/theme-chalk/src/index.scss";
 
 import app from "./App.vue";
 createApp(app).use(YUI).mount("#app");

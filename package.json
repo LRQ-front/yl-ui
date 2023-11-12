@@ -1,7 +1,7 @@
 {
-  "name": "yl-ui-lib",
+  "name": "yl-ui-lib2",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "ui组件库",
   "main": "dist/yl-ui.umd.js",
   "license": "MIT",
@@ -22,7 +22,8 @@
   "dependencies": {
     "gulp": "^4.0.2",
     "typescript": "^5.2.2",
-    "vue": "^3.2.36"
+    "vue": "^3.2.36",
+    "yl-ui-lib": "^1.2.2"
   },
   "scripts": {
     "dev": "webpack serve --config ./play/webpack.config.js",

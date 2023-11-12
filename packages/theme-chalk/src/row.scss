@@ -1,4 +1,3 @@
-@import "./common/var.scss";
 @import "./mixins/mixins.scss";
 
 @include b(row) {
@@ -12,7 +11,7 @@
   @include when(justify-space-between) {
     justify-content: space-between;
   }
-  @include when(justify-around) {
+  @include when(justify-space-around) {
     justify-content: space-around;
   }
   @include when(justify-center) {

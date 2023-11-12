@@ -1,5 +1,8 @@
-import YUI from "yl-ui-lib";
-import "yl-ui-lib/dist/css/index.css";
+// import YUI from "yl-ui-lib";
+// import "yl-ui-lib/dist/css/index.css";
+
+// import YUI from "../../../packages/yl-ui/index.ts";
+// import "../../../packages/theme-chalk/src/index.scss";
 
 import theme from "vitepress/theme";
 import "vitepress-theme-demoblock/dist/theme/styles/index.css";

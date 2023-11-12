@@ -1,4 +1,4 @@
-@use "./mixins/mixins.scss";
+@import "./mixins/mixins.scss";
 
 @include b(button-group) {
   // BEM规范
@@ -6,6 +6,7 @@
     //yl-button-group > yl-button
     & {
       border-radius: 0;
+
       border-right: 1px solid white;
     }
 
