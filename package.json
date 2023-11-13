@@ -1,5 +1,6 @@
 {
   "name": "yl-ui-lib",
+  "private":true,
   "version": "1.2.6",
   "description": "ui组件库",
   "main": "dist/yl-ui.umd.js",
