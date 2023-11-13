@@ -1,10 +1,10 @@
 {
-  "name": "yl-ui-lib",
-  "version": "1.2.6",
+  "name": "yl-ui-lib2",
+  "private": true,
+  "version": "1.2.0",
   "description": "ui组件库",
   "main": "dist/yl-ui.umd.js",
   "license": "MIT",
-  "changelog": "修复button组件为circle时的padding问题",
   "workspaces": [
     "packages/*",
     "play"
@@ -23,7 +23,7 @@
     "gulp": "^4.0.2",
     "typescript": "^5.2.2",
     "vue": "^3.2.36",
-    "yl-ui-lib": "^1.2.6"
+    "yl-ui-lib": "^1.2.5"
   },
   "scripts": {
     "dev": "webpack serve --config ./play/webpack.config.js",

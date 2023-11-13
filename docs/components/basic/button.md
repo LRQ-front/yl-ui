@@ -1,6 +1,6 @@
 # Button 按钮
 
-### 基础用法
+## 基础用法
 
 使用 `type`，`round`,`circle`来定义按钮样式
 :::demo
@@ -44,7 +44,7 @@
 
 :::
 
-### 禁用状态
+## 禁用状态
 
 使用 disabled 属性来定义按钮是否被禁用
 
@@ -65,7 +65,7 @@
 
 :::
 
-### 图标按钮
+## 图标按钮
 
 通过添加 icon 属性给按钮添加图标，也可以通过插槽，使用 icon 组件将图标插入
 
@@ -88,9 +88,9 @@
 
 :::
 
-### 调整尺寸
+## 调整尺寸
 
-通过 sze 属性给按钮调整尺寸，有 large，medium，small，mini 选项,medium 是默认尺寸
+通过 sze 属性给按钮调整尺寸，有 large，medium，small 选项,medium 是默认尺寸
 
 :::demo
 
@@ -110,11 +110,10 @@
     <yl-button round class="ml" size="mini">Mini</yl-button>
   </yl-row>
 
-  <yl-row class="mb">
+  <yl-row>
     <yl-button icon="search" circle class="ml" size="large"></yl-button>
     <yl-button icon="search" circle class="ml" size="medium"></yl-button>
     <yl-button icon="search" circle class="ml" size="small"></yl-button>
-    <yl-button icon="search" circle class="ml" size="mini"></yl-button>
   </yl-row>
 </template>
 
@@ -129,3 +128,65 @@
 ```
 
 :::
+
+## 按钮组
+
+使用`<yl-button-group>`对多个按钮分组
+:::demo
+
+```vue
+<template>
+  <yl-button-group>
+    <yl-button type="success" size="medium" icon="arrow-left-bold"
+      >Previous Page</yl-button
+    >
+    <yl-button type="success" size="medium">
+      Next Page
+      <yl-icon name="arrow-right-bold"></yl-icon>
+    </yl-button>
+  </yl-button-group>
+</template>
+```
+
+:::
+
+## 加载状态的按钮
+
+设置 loading=true，显示加载状态
+:::demo
+
+```vue
+<template>
+  <yl-button loading type="primary">加载中</yl-button>
+</template>
+```
+
+:::
+
+## Button API
+
+### Button Attributes
+
+| 属性名   | 说明           | 类型             | 默认值      | 可选值                                                                 |
+| -------- | -------------- | ---------------- | ----------- | ---------------------------------------------------------------------- |
+| type     | 类型           | `string`         | `'default'` | `'primary' \| 'success' \| 'warning' \| 'danger' \| 'info' \| default` |
+| icon     | 图标           | `string`         | ----        | ----                                                                   |
+| disabled | 禁用           | `boolean`        | `false`     | `'true' \| 'false'`                                                    |
+| round    | 是否是圆角     | `boolean`        | `false`     | `'true' \| 'false'`                                                    |
+| loading  | 是否是加载中   | `boolean`        | `false`     | `'true' \| 'false'`                                                    |
+| circle   | 是否是原型按钮 | `boolean`        | `false`     | `'true' \| 'false'`                                                    |
+| size     | 尺寸           | `boolean/number` | `false`     | `'large' \| 'medium'\|'small'`                                         |
+
+### Button Slots
+
+| 插槽名  | 说明           |
+| ------- | -------------- |
+| default | 自定义默认内容 |
+
+## ButtonGroup API
+
+### ButtonGroup Slots
+
+| 插槽名  | 说明           | 子标签 |
+| ------- | -------------- | ------ |
+| default | 自定义默认内容 | Button |

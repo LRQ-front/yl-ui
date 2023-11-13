@@ -24,7 +24,7 @@ var require_yl_ui_umd = __commonJS({
           e3.component(i.name, i);
         };
         const c = i;
-      }, 296: (e2, t2, n2) => {
+      }, 377: (e2, t2, n2) => {
         n2.d(t2, { default: () => u });
         var o2 = n2(789), r2 = ["disabled"], l = { key: 2 }, i = { key: 3 };
         const c = (0, o2.defineComponent)({ name: "YlButton", props: { type: { type: String, default: "default", validator: function(e3) {
@@ -128,7 +128,7 @@ var require_yl_ui_umd = __commonJS({
       var r = {};
       return (() => {
         o.r(r), o.d(r, { default: () => s });
-        var e2 = o(296), t2 = o(976), n2 = o(698), l = o(364), i = o(98);
+        var e2 = o(377), t2 = o(976), n2 = o(698), l = o(364), i = o(98);
         function c(e3) {
           return c = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e4) {
             return typeof e4;

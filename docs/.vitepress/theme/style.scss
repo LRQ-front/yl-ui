@@ -1,0 +1,32 @@
+:root {
+  /* --vp-c-brand-1: #409eff; */
+
+  /* --vp-button-brand-bg: #409eff; */
+
+  --vp-code-color: #303133;
+}
+
+//修改原有的table样式
+.vp-doc {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+    display: inline-table;
+  }
+
+  th,
+  tr:nth-child(2n) {
+    background-color: transparent;
+  }
+
+  td,
+  th {
+    text-align: left;
+    // font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+}

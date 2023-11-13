@@ -1,6 +1,15 @@
 <template>
-  <h1>Button和Icon测试</h1>
+  <div>
+    <ul class="icons">
+      <li class="item" v-for="(icon, index) in iconArrs" :key="index">
+        <yl-icon :name="icon"></yl-icon>
+        <span class="icon-name">{{ icon }}</span>
+      </li>
+    </ul>
+  </div>
 
+  <hr />
+  <h1>Button和Icon测试</h1>
   <!-- size测试 -->
   <yl-button size="large" round disabled></yl-button>
   <yl-button round type="success" size="medium"></yl-button>
@@ -92,9 +101,48 @@
   <hr />
 </template>
 
-<style>
-* {
-  /* margin: 0;
-  padding: 0; */
+<script setup lange="ts">
+import { ref } from "vue";
+
+const iconArrs = [
+  "loading",
+  "location",
+  "location1",
+  "plus",
+  "arrow-down",
+  "arrow-left-bold",
+  "arrow-up-bold",
+  "arrow-right-bold",
+  "logistics-storehouse",
+  "sousuo",
+  "home",
+  "jiazai",
+  "jiazai1",
+  "minus",
+  "search",
+  "star",
+];
+</script>
+
+<style lang="scss">
+ul {
+  list-style: none;
+}
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 90px;
+
+  .item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    .icon-name {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
 }
 </style>

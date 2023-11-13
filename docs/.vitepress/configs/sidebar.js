@@ -30,6 +30,10 @@ function getComponentSidebar() {
           text: "icon 图标",
           link: "/components/basic/icon.md",
         },
+        {
+          text: "Layout 布局",
+          link: "/components/basic/layout.md",
+        },
       ],
     },
   ];

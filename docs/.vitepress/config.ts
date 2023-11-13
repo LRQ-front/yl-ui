@@ -24,7 +24,7 @@ export default defineConfig({
     logo: "/logo.png",
     nav,
     outline: {
-      level: 3,
+      level: [2, 5],
       label: "CONTENTS",
     },
     sidebar,
