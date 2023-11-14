@@ -7,12 +7,12 @@ import {
   __toCommonJS
 } from "./chunk-CF3WPAMV.js";
 
-// node_modules/yl-ui-lib/dist/yl-ui.umd.js
+// docs/node_modules/yl-ui-lib/dist/yl-ui.umd.js
 var require_yl_ui_umd = __commonJS({
-  "node_modules/yl-ui-lib/dist/yl-ui.umd.js"(exports, module) {
+  "docs/node_modules/yl-ui-lib/dist/yl-ui.umd.js"(exports, module) {
     !function(e, t) {
-      "object" == typeof exports && "object" == typeof module ? module.exports = t((init_vue_runtime_esm_bundler(), __toCommonJS(vue_runtime_esm_bundler_exports))) : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports["yl-ui"] = t((init_vue_runtime_esm_bundler(), __toCommonJS(vue_runtime_esm_bundler_exports))) : e["yl-ui"] = t(e.Vue);
-    }(self, (e) => (() => {
+      "object" == typeof exports && "object" == typeof module ? module.exports = t((init_vue_runtime_esm_bundler(), __toCommonJS(vue_runtime_esm_bundler_exports))) : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports["yl-ui-lib"] = t((init_vue_runtime_esm_bundler(), __toCommonJS(vue_runtime_esm_bundler_exports))) : e["yl-ui-lib"] = t(e.Vue);
+    }(exports, (e) => (() => {
       "use strict";
       var t = { 698: (e2, t2, n2) => {
         n2.d(t2, { default: () => c });

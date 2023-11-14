@@ -9,6 +9,7 @@ import nav from "./configs/nav";
 import sidebar from "./configs/sidebar";
 
 export default defineConfig({
+  base: "/yl-ui",
   title: "YL UI组件库",
   description: "ui组件库",
   head: [["link", { rel: "icon", href: "/logo.png" }]],
@@ -24,7 +25,7 @@ export default defineConfig({
     logo: "/logo.png",
     nav,
     outline: {
-      level: [2, 5],
+      level: [2, 3],
       label: "CONTENTS",
     },
     sidebar,

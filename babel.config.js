@@ -9,15 +9,18 @@ module.exports = {
       plugins: ["@babel/transform-typescript"],
     },
   ],
-  env: {
-    utils: {
-      plugins: [
-        // ?
-        [
-          "babel-plugin-module-resolver", // 为了能正确找到yl-ui模块
-          { root: "yl-ui" },
-        ],
-      ],
-    },
-  },
+  plugins: [
+    [
+      "component",
+      {
+        libraryName: "yl-ui-lib",
+        styleLibrary: {
+          name: "css",
+          base: false,
+          path: "[module].css", //yl-ui-lib/css/button.css
+        },
+        libDir: "dist",
+      },
+    ],
+  ],
 };
