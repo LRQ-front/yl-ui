@@ -1,7 +1,7 @@
 {
   "name": "yl-ui-lib2",
+  "version": "1.0.0",
   "private": true,
-  "version": "1.2.0",
   "description": "ui组件库",
   "main": "dist/yl-ui.umd.js",
   "license": "MIT",
