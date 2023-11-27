@@ -3,7 +3,7 @@
 
   /* --vp-button-brand-bg: #409eff; */
 
-  --vp-code-color: #303133;
+  --vp-code-color: var(--vp-c-text-1);
 }
 
 //修改原有的table样式
@@ -13,9 +13,9 @@
   overflow-x: auto;
 
   //暗色模式下attributes的字体
-  :not(pre, h1, h2, h3, h4, h5, h6) > code {
-    color: white;
-  }
+  // :not(pre, h1, h2, h3, h4, h5, h6) > code {
+  //   color: white;
+  // }
   table {
     width: 100%;
     display: inline-table;

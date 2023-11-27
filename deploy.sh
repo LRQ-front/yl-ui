@@ -14,7 +14,7 @@ cd docs/.vitepress/dist
 
 git init
 git add -A
-git commit -m 'fix:修复按需引入'
+git commit -m 'feat:修改code样式'
 
 # 如果部署到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master

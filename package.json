@@ -9,27 +9,20 @@
     "packages/*",
     "play"
   ],
-  "keywords": [
-    "yl-ui",
-    "ui",
-    "vue"
-  ],
   "author": "rq",
-  "files": [
-    "dist",
-    "packages"
-  ],
   "dependencies": {
     "gulp": "^4.0.2",
+    "mini-css-extract-plugin": "^2.7.6",
     "typescript": "^5.2.2",
-    "vue": "^3.2.36"
+    "vue": "^3.2.36",
+    "yl-ui-lib": "^1.2.13"
   },
   "scripts": {
     "dev": "webpack serve --config ./play/webpack.config.js",
     "build:css": "rm -rf ./dist && gulp -f packages/theme-chalk/gulpfile.ts",
-    "build:cmp": "webpack --config ./build/webpack.config.js",
-    "build": "npm run build:css && npm run build:lib",
-    "build:esm-bundle": "rollup -c ./build/rollup.config.bundle.cjs --bundleConfigAsCjs",
+    "build:cmp": "webpack --config ./build/webpack.self.js",
+    "build:gulp-webpack": "npm run build:css && npm run build:lib",
+    "build:webpack": "rm -rf ./dist &&webpack --config ./build/webpack.config.js",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "deploy": "bash deploy.sh"

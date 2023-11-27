@@ -3,7 +3,6 @@ const { VueLoaderPlugin } = require("vue-loader");
 const glob = require("glob");
 
 const list = {}; //存放每个组件和总入口的文件路径
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 async function makeList(dirPath, list) {
   const files = glob.sync(`${dirPath}/**/index.ts`);
@@ -48,33 +47,10 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader",
       },
-      {
-        // 用来匹配 .css 结尾的文件
-        test: /\.css$/,
-        // use 数组里面 Loader 执行顺序是从右到左
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-      {
-        test: /\.s[ac]ss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
-      },
-      {
-        test: /\.(ttf|woff2?)$/,
-        type: "asset/resource",
-        generator: {
-          filename: "css/font/[name].[ext]",
-        },
-      },
     ],
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"],
   },
-  plugins: [
-    new VueLoaderPlugin(),
-    // 提取 CSS 文件的插件
-    new MiniCssExtractPlugin({
-      filename: "css/[name].css",
-    }),
-  ],
+  plugins: [new VueLoaderPlugin()],
 };
