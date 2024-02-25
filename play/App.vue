@@ -9,6 +9,12 @@
     >
     <yl-col :span="6"><div :style="{ backgroundColor: 'red' }">1</div></yl-col>
   </yl-row>
+
+  <yl-button class="ml" size="large">Large</yl-button>
+  <yl-button class="ml" size="medium">Default</yl-button>
+  <yl-button class="ml" size="small">Small</yl-button>
+  <yl-button class="ml" size="mini">Mini</yl-button>
+  <yl-button icon="search" circle class="ml" size="small"></yl-button>
   <!-- <hr />
   <h1>Button和Icon测试</h1>
 

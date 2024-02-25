@@ -6,7 +6,8 @@ import Row from "@yl-ui/row";
 import Col from "@yl-ui/col";
 
 //css文件引入
-import "../theme-chalk/src/index.scss";
+//在使用webpack打包整个组件库时才开启
+// import "../theme-chalk/src/index.scss";
 
 import { App } from "vue";
 const components = [

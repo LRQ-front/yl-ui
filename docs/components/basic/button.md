@@ -100,14 +100,12 @@
     <yl-button class="ml" size="large">Large</yl-button>
     <yl-button class="ml" size="medium">Default</yl-button>
     <yl-button class="ml" size="small">Small</yl-button>
-    <yl-button class="ml" size="mini">Mini</yl-button>
   </yl-row>
 
   <yl-row class="mb">
     <yl-button round class="ml" size="large">Large</yl-button>
     <yl-button round class="ml" size="medium">Default</yl-button>
     <yl-button round class="ml" size="small">Small</yl-button>
-    <yl-button round class="ml" size="mini">Mini</yl-button>
   </yl-row>
 
   <yl-row>

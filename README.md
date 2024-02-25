@@ -5,7 +5,7 @@
 ### 1.安装组件库
 
 ```bash
-npm i yl-ui-lib
+npm install yl-ui-lib
 ```
 
 ### 2.引用组件库
@@ -70,7 +70,7 @@ export default defineConfig({
 
 Webpack
 
-创建 babel.congi.js ，添加如下配置
+创建 babel.config.js ，添加如下配置
 
 ```javascript
 module.exports = {

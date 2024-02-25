@@ -23,7 +23,7 @@ module.exports = {
   mode: "production",
   entry: list,
   output: {
-    path: path.resolve(__dirname, "../dist"),
+    path: path.resolve(__dirname, "../dist(webpack)"),
     filename: "[name].js",
     libraryTarget: "umd",
     library: "yl-ui-lib",

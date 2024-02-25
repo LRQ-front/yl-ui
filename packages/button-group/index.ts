@@ -1,6 +1,7 @@
 import ButtonGroup from "./src/button-group.vue";
 import { App } from "vue";
-import "../theme-chalk/src/button-group.scss";
+//在使用webpack打包整个组件库时才开启
+// import "../theme-chalk/src/button-group.scss";
 ButtonGroup.install = (app: App) => {
   app.component(ButtonGroup.name, ButtonGroup);
 };
