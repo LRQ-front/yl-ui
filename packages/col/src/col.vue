@@ -33,7 +33,7 @@ export default defineComponent({
     },
   },
   setup(props, { slots }) {
-    //导入父组件的gutter
+    //导入父组件的gutter，就是每个col的间距
     const gutter = inject("gutter", 0);
 
     //类名

@@ -27,10 +27,11 @@ import "yl-ui-lib/dist/css/index.css";
 
 //使用npm link测试
 // import YUI from "yl-ui-lib";
-import { Button, Icon, Row, Col } from "yl-ui-lib";
+// import { Button, Icon, Row, Col } from "yl-ui-lib";
 // import { Icon } from "yl-ui-lib";
 // console.log(Button);
+import YUI from "yl-ui";
 
 import app from "./App.vue";
-createApp(app).use(Button).use(Icon).use(Row).use(Col).mount("#app");
-// createApp(app).use(YUI).mount("#app");
+// createApp(app).use(Button).use(Icon).use(Row).use(Col).mount("#app");
+createApp(app).use(YUI).mount("#app");
