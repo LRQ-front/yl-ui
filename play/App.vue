@@ -2,12 +2,27 @@
   <yl-button type="primary">hello</yl-button>
   <yl-icon name="loading"></yl-icon>
   <hr />
-  <yl-row justify="space-around">
+  <yl-row>
     <yl-col :span="6"><div :style="{ backgroundColor: 'red' }">1</div></yl-col>
     <yl-col :span="6"
       ><div :style="{ backgroundColor: 'green' }">1</div></yl-col
     >
     <yl-col :span="6"><div :style="{ backgroundColor: 'red' }">1</div></yl-col>
+  </yl-row>
+
+  <yl-row :gutter="10">
+    <yl-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1" :offset="9"
+      ><div :style="{ backgroundColor: 'red' }">1</div></yl-col
+    >
+    <!-- <yl-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11" offset="2"
+      ><div :style="{ backgroundColor: 'red' }">2</div></yl-col
+    >
+    <yl-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11" offset="2"
+      ><div :style="{ backgroundColor: 'red' }">3</div></yl-col
+    > -->
+    <yl-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1" :offset="9"
+      ><div :style="{ backgroundColor: 'red' }">4</div></yl-col
+    >
   </yl-row>
 
   <yl-button class="ml" size="large">Large</yl-button>

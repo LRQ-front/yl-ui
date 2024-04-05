@@ -9,8 +9,12 @@
 
 <script lang="ts">
 import { PropType, computed, defineComponent } from "vue";
+import YlIcon from "@yl-ui/icon";
 export default defineComponent({
   name: "YlButton",
+  components: {
+    YlIcon,
+  },
   props: {
     type: {
       type: String as PropType<

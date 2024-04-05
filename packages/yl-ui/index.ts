@@ -9,6 +9,8 @@ import Col from "@yl-ui/col";
 //在使用webpack打包整个组件库时才开启
 // import "../theme-chalk/src/index.scss";
 
+console.log("test");
+
 import { App } from "vue";
 const components = [
   // 引入所有组件

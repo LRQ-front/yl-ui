@@ -56,6 +56,10 @@ export default defineComponent({
         if (typeof props[size] == "number") {
           res.push(`yl-col-${size}-${props[size]}`);
         }
+
+        if (typeof props["offset"] == "number" && props["offset"] > 0) {
+          res.push(`yl-col-${size}-offset-${props["offset"]}`);
+        }
       });
 
       return ["yl-col", ...res];
