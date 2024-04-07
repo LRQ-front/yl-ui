@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for row/src/row.vue</title>
+    <title>Code coverage report for checkbox/src/checkboxUtils.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">row/src</a> row.vue</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">checkbox/src</a> checkboxUtils.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>53/53</span>
+                <span class='fraction'>54/54</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">88.88% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>8/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>53/53</span>
+                <span class='fraction'>54/54</span>
             </div>
         
             
@@ -116,7 +116,8 @@
 <a name='L51'></a><a href='#L51'>51</a>
 <a name='L52'></a><a href='#L52'>52</a>
 <a name='L53'></a><a href='#L53'>53</a>
-<a name='L54'></a><a href='#L54'>54</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -130,23 +131,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
@@ -154,7 +138,10 @@
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">6x</span>
@@ -163,65 +150,81 @@
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;script lnag="ts"&gt;
-import { defineComponent, h, computed, provide } from "vue";
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { getCurrentInstance, computed } from "vue";
 &nbsp;
-export default defineComponent({
-  name: "YlRow",
-  props: {
-    tag: {
-      type: String,
-      default: "div",
+export type checkboxValue = string | boolean | number;
+&nbsp;
+export interface ICheckboxProps {
+  disabled?: boolean;
+  checked?: boolean;
+  name?: string; //input中的name属性
+  modelValue: checkboxValue;
+  indeterminate?: boolean; //半选
+  label?: checkboxValue;
+}
+&nbsp;
+const useModel = (props: ICheckboxProps) =&gt; {
+  const { emit } = getCurrentInstance();
+  const model = computed({
+    get() {
+      return props.modelValue;
     },
-    gutter: {
-      type: Number,
-      default: 0,
+    set(val: checkboxValue) {
+      emit("update:modelValue", val);
     },
-    justify: {
-      type: String,
-      default: "start",
-    },
-  },
-  setup(props, { slots }) {
-    //给子组件提供gutter
-    provide("gutter", props.gutter);
+  });
+  return model;
+};
 &nbsp;
-    const classs = computed(() =&gt; {
-      return [
-        "yl-row",
-        props.justify !== "start" ? `is-justify-${props.justify}` : "",
-        //不是start就添加相应的类，是start就不用，本来就是start
-      ];
-    });
-    const styles = computed(() =&gt; {
-      let res = {
-        marginLeft: "",
-        marginRight: "",
-      };
+const useCheckboxStatus = (props: ICheckboxProps, model) =&gt; {
+  const isChecked = computed(() =&gt; {
+    const value = model.value;
+    return value;
+  });
+  return isChecked;
+};
 &nbsp;
-      if (props.gutter) {
-        //去除头部和尾部的空余
-        res.marginLeft = `-${props.gutter / 2}px`;
-        res.marginRight = res.marginLeft;
-      }
-      return res;
-    });
-&nbsp;
-    return () =&gt;
-      h(
-        props.tag,
-        { class: classs.value, style: styles.value },
-        slots.default?.()
-      );
-  },
-});
-&lt;/script&gt;
+const useEvent = () =&gt; {
+  const { emit } = getCurrentInstance();
+  function handleChange(e: InputEvent) {
+    const target = e.target as HTMLInputElement;
+    const value = target.checked ? true <span class="branch-0 cbranch-no" title="branch not covered" >: false;</span>
+    emit("change", value);
+  }
+  return handleChange;
+};
+export function useCheckbox(props: ICheckboxProps) {
+  //1.实现双向绑定
+  const model = useModel(props);
+  const isChecked = useCheckboxStatus(props, model);
+  const handleChange = useEvent();
+  return {
+    model,
+    handleChange,
+    isChecked,
+  };
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

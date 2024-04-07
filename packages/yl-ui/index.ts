@@ -1,7 +1,7 @@
 import Button from "@yl-ui/button";
 import Icon from "@yl-ui/icon";
 import ButtonGroup from "@yl-ui/button-group";
-
+import Checkbox from "@yl-ui/checkbox";
 import Row from "@yl-ui/row";
 import Col from "@yl-ui/col";
 
@@ -9,13 +9,12 @@ import Col from "@yl-ui/col";
 //在使用webpack打包整个组件库时才开启
 // import "../theme-chalk/src/index.scss";
 
-console.log("test");
-
 import { App } from "vue";
 const components = [
   // 引入所有组件
   Button,
   Icon,
+  Checkbox,
   ButtonGroup,
   Row,
   Col,

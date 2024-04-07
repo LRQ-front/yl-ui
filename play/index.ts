@@ -31,6 +31,7 @@ import "yl-ui-lib/dist/css/index.css";
 // import { Icon } from "yl-ui-lib";
 // console.log(Button);
 import YUI from "yl-ui";
+import "../packages/theme-chalk/src/index.scss";
 
 import app from "./App.vue";
 // createApp(app).use(Button).use(Icon).use(Row).use(Col).mount("#app");

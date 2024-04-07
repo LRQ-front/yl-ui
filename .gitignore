@@ -1,2 +1,4 @@
 node_modules/
 package_发布的.json
+dist(gulp+webpack)/
+dist/

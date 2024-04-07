@@ -12,6 +12,10 @@ module.exports = {
     customExportConditions: ["node", "node-addons"],
   },
 
+  moduleNameMapper: {
+    // "^\\./(.+)$": "<rootDir>/packages/$1/src/$1.ts",
+    "./checkboxUtils": "<rootDir>/packages/checkbox/src/checkboxUtils.ts",
+  },
   moduleFileExtensions: [
     "js",
     "mjs",

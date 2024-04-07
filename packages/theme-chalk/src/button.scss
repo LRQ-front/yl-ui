@@ -31,18 +31,23 @@
 
   &.is-disabled.#{$namespace}-button--warning {
     background-color: $--bg-color-warning-disabled;
+    border-color: $--bg-color-warning-disabled;
   }
   &.is-disabled.#{$namespace}-button--primary {
     background-color: $--bg-color-primary-disabled;
+    border-color: $--bg-color-primary-disabled;
   }
   &.is-disabled.#{$namespace}-button--info {
     background-color: $--bg-color-warning-disabled;
+    border-color: $--bg-color-warning-disabled;
   }
   &.is-disabled.#{$namespace}-button--danger {
     background-color: $--bg-color-danger-disabled;
+    border-color: $--bg-color-danger-disabled;
   }
   &.is-disabled.#{$namespace}-button--success {
     background-color: $--bg-color-success-disabled;
+    border-color: $--bg-color-success-disabled;
   }
   &.is-disabled.#{$namespace}-button--default {
     background-color: white;

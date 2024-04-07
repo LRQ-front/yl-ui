@@ -1,5 +1,5 @@
 <template>
-  <yl-button type="primary">hello</yl-button>
+  <yl-button type="primary" disabled>hello</yl-button>
   <yl-icon name="loading"></yl-icon>
   <hr />
   <yl-row>
@@ -113,10 +113,25 @@
       ><div style="background-color: gray; height: 20px"></div
     ></yl-col>
   </yl-row> -->
+
+
+  <br></br>
+  <h2>checkbox测试</h2>
+  <span> {{ checkValue}}</span>
+  <!-- <yl-checkbox label="选项1" v-model="checkValue" @change="handleChange"></yl-checkbox> -->
+  <yl-checkbox :indeterminate="true" v-model="checkValue">半选</yl-checkbox>
+  <yl-checkbox disabled :indeterminate="true">disabled</yl-checkbox>
+  <yl-checkbox disabled checked>disabled</yl-checkbox>
 </template>
 
 <script setup lange="ts">
 import { ref } from "vue";
+const checkValue=ref(false)
+
+function handleChange(e) {
+  console.log(e);
+  // alert(e)
+}
 </script>
 
 <style lang="scss"></style>
